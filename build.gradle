@@ -1,8 +1,9 @@
 apply plugin: 'ratpack'
+apply plugin: 'application'
 apply plugin: 'groovy'
 apply plugin: 'eclipse-wtp'
 
-mainClassName = "com.bleedingwolf.ratpack.RatpackRunner" //jetty class
+mainClassName = "org.mortbay.jetty.runner.Runner" //jetty class
 applicationName = "app"
 
 buildscript {
@@ -21,8 +22,8 @@ buildscript {
 
 dependencies {
   groovy 'org.codehaus.groovy:groovy:2.0.1'
-  compile 'org.mortbay.jetty:jetty-runner:8.1.6.v20120903'
+  compile 'org.mortbay.jetty:jetty-runner:7.4.5.v20110725'
 }
 
-task stage(dependsOn: ['clean', 'war'])
+task stage(dependsOn: ['clean', 'war', 'installApp'])
 

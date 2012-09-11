@@ -1,4 +1,0 @@
-export PORT1=$PORT
-export HEROKU=1
-gradle jettyRunWar
-
