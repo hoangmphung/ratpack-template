@@ -3,6 +3,7 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse-wtp'
 
 mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
+applicationName = "app"
 
 buildscript {
   repositories {
@@ -20,6 +21,8 @@ buildscript {
 
 dependencies {
   groovy 'org.codehaus.groovy:groovy:2.0.1'
+  compile 'org.eclipse.jetty:jetty-servlet:7.4.5.v20110725'
+  compile 'javax.servlet:servlet-api:2.5'
 }
 
 task stage(dependsOn: ['war'])
