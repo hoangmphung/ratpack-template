@@ -1,0 +1,22 @@
+apply plugin: 'ratpack'
+apply plugin: 'eclipse-wtp'
+
+mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
+
+buildscript {
+  repositories {
+	//mavenRepo url: 'file:///home/phungmh/Workspaces/groovy/maven-repo'
+	mavenRepo url: 'https://github.com/hoangmphung/ratpack-plugin-maven/raw/master/'
+	mavenCentral()
+  }
+  dependencies {
+    classpath 'com.augusttechgroup:ratpack-plugin:0.6'
+  }
+}
+
+dependencies {
+  groovy 'org.codehaus.groovy:groovy:2.0.1'
+}
+
+task stage(dependsOn: ['war'])
+
