@@ -1,0 +1,9 @@
+#!/bin/sh
+# this script exports the PORT1 environment variale from $PORT
+# it seems gradles overwrites the PORT variable somewhere internally
+# this is our workaround
+
+export PORT1=$PORT
+gradle $@
+
+

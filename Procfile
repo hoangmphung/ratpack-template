@@ -1,1 +1,2 @@
-web: sh jettyRunWar
+web: sh ./herokuGradle jettyRunWar
+
