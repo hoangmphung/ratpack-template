@@ -1,4 +1,5 @@
 apply plugin: 'ratpack'
+apply plugin: 'groovy'
 apply plugin: 'eclipse-wtp'
 
 mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
