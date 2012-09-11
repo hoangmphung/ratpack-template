@@ -14,6 +14,7 @@ buildscript {
   }
   dependencies {
     classpath 'com.augusttechgroup:ratpack-plugin:0.6'
+	classpath 'org.codehaus.groovy:groovy:2.0.1'
   }
 }
 
