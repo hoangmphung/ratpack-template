@@ -1,2 +1,2 @@
-web: sh ./herokuGradle jettyRunWar
+web: sh ./herokuCmd ./build/install/app/bin/app
 
