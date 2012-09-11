@@ -1,1 +1,1 @@
-web: gradle jettyRunWar
+web: sh jettyRunWar

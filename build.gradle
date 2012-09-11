@@ -5,8 +5,8 @@ mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
 
 buildscript {
   repositories {
-	//mavenRepo url: 'file:///home/phungmh/Workspaces/groovy/maven-repo'
-	mavenRepo url: 'https://github.com/hoangmphung/ratpack-plugin-maven/raw/master/'
+	mavenRepo url: 'file:///home/phungmh/Workspaces/groovy/maven-repo'
+	//mavenRepo url: 'https://github.com/hoangmphung/ratpack-plugin-maven/raw/master/'
 	mavenCentral()
   }
   dependencies {
