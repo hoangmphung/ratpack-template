@@ -16,9 +16,9 @@ buildscript {
   }
 }
 
-//dependencies {
-//  groovy 'org.codehaus.groovy:groovy:2.0.1'
-//}
+dependencies {
+  groovy 'org.codehaus.groovy:groovy:2.0.1'
+}
 
 task stage(dependsOn: ['war'])
 
