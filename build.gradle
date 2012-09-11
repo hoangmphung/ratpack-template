@@ -1,5 +1,3 @@
-apply plugin: 'ratpack'
-apply plugin: 'eclipse-wtp'
 
 mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
 
@@ -16,9 +14,11 @@ buildscript {
   }
 }
 
-dependencies {
-  groovy 'org.codehaus.groovy:groovy:2.0.1'
-}
+//dependencies {
+//  groovy 'org.codehaus.groovy:groovy:2.0.1'
+//}
+apply plugin: 'ratpack'
+apply plugin: 'eclipse-wtp'
 
 task stage(dependsOn: ['war'])
 
