@@ -1,3 +1,1 @@
-export PORT1=$PORT
 gradle jettyRunWar
-

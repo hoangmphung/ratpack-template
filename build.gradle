@@ -5,10 +5,10 @@ mainClassName = "com.bleedingwolf.ratpack.RatpackRunner"
 
 buildscript {
   repositories {
-	if ( System.getenv("HEROKU") == '1' )
-		mavenRepo url: 'https://github.com/hoangmphung/ratpack-plugin-maven/raw/master/'
-	else
+	if ( System.getenv("HEROKU") == '0' )
 		mavenRepo url: 'file:///home/phungmh/Workspaces/groovy/maven-repo'
+	else
+		mavenRepo url: 'https://github.com/hoangmphung/ratpack-plugin-maven/raw/master/'
 	mavenCentral()
   }
   dependencies {
