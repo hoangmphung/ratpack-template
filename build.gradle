@@ -17,11 +17,13 @@ buildscript {
   dependencies {
     classpath 'com.augusttechgroup:ratpack-plugin:0.6'
 	classpath 'org.codehaus.groovy:groovy:2.0.2'
+	classpath 'org.codehaus.groovy:groovy-templates:2.0.2'
   }
 }
 
 dependencies {
   groovy 'org.codehaus.groovy:groovy:2.0.2'
+  compile 'org.codehaus.groovy:groovy-templates:2.0.2'
   compile 'org.mortbay.jetty:jetty-runner:7.4.5.v20110725'
 }
 
