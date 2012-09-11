@@ -25,5 +25,5 @@ dependencies {
   compile 'javax.servlet:servlet-api:2.5'
 }
 
-task stage(dependsOn: ['war'])
+task stage(dependsOn: ['clean', 'installApp''])
 
